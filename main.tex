@@ -7,6 +7,7 @@
 \usepackage{mathpazo}
 \usepackage{microtype}
 \usepackage{hyperref}
+\usepackage{tikz} % Apenas o pacote, sem o \usetikzlibrary
 
 \title{Reflexive Portfolio\\Academic Writing in English}
 \author{Gustavo Guerreiro}
@@ -16,7 +17,8 @@
 
 \frontmatter
 \selectlanguage{english}
-\maketitle
+\include{covers/frontcover} 
+
 \tableofcontents
 
 \include{front/opening}
