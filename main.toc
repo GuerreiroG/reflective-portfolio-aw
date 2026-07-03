@@ -1,4 +1,0 @@
-\babel@toc {english}{}\relax 
-\babel@toc {english}{}\relax 
-\contentsline {chapter}{Opening Text}{ii}{chapter*.2}%
-\contentsline {chapter}{\numberline {1}March}{1}{chapter.1}%

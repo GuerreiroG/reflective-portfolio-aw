@@ -7,7 +7,25 @@
 \usepackage{mathpazo}
 \usepackage{microtype}
 \usepackage{hyperref}
-\usepackage{tikz} % Apenas o pacote, sem o \usetikzlibrary
+\usepackage{tikz}
+\usepackage{titlesec}
+\usepackage{pdfpages}
+\usepackage{graphicx}
+
+\newcommand{\includeslides}[1]{
+    \pdfximage{#1}
+    \edef\maxpages{\the\pdflastximagepages}% 
+    
+    \setlength{\fboxsep}{0pt}%
+    \setlength{\fboxrule}{0.5pt}%
+    
+    \foreach \i in {1,...,\maxpages} {%
+        \begin{center}
+            \fbox{\includegraphics[page=\i, width=0.85\linewidth]{#1}}
+        \end{center}
+        \vspace{0.4cm}
+    }%
+}
 
 \title{Reflexive Portfolio\\Academic Writing in English}
 \author{Gustavo Guerreiro}
@@ -31,6 +49,9 @@
 \include{chapters/april}
 \include{chapters/may}
 \include{chapters/june}
+
+\appendix
+\include{appendix/appendix}
 
 \backmatter
 \include{back/closing}
