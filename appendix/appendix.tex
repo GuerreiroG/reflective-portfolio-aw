@@ -1,14 +1,174 @@
+\newcommand{\includetomitch}[1]{
+    \pdfximage{#1}
+    \edef\maxpages{\the\pdflastximagepages}
+    
+    \setlength{\fboxsep}{0pt}
+    \setlength{\fboxrule}{0.5pt}
+    
+    \begin{center}
+    \foreach \i in {13,...,69} {
+        \fbox{\includegraphics[page=\i, width=0.49\linewidth]{#1}}%
+        \ifodd\i
+            \hspace{0.001\linewidth}%
+        \else
+            \\[0.1cm]%
+        \fi
+    }
+    \end{center}
+}
+
+\newcommand{\includeabs}[1]{
+    \pdfximage{#1}
+    \edef\maxpages{\the\pdflastximagepages}
+    
+    \setlength{\fboxsep}{0pt}
+    \setlength{\fboxrule}{0.5pt}
+    
+    \begin{center}
+    \foreach \i in {1,...,3} {
+        \fbox{\includegraphics[page=\i, width=0.49\linewidth]{#1}}%
+        \ifodd\i
+            \hspace{0.001\linewidth}%
+        \else
+            \\[0.1cm]%
+        \fi
+    }
+    \end{center}
+}
+
+\newcommand{\includeslides}[1]{
+    \pdfximage{#1}
+    \edef\maxpages{\the\pdflastximagepages}
+    
+    \setlength{\fboxsep}{0pt}
+    \setlength{\fboxrule}{0.5pt}
+    
+    \begin{center}
+    \foreach \i in {1,...,\maxpages} {
+        \fbox{\includegraphics[page=\i, width=0.49\linewidth]{#1}}%
+        \ifodd\i
+            \hspace{0.001\linewidth}%
+        \else
+            \\[0.1cm]%
+        \fi
+    }
+    \end{center}
+}
+
+
 \chapter{Class Slides}
 \label{app:slides}
 
-\section{March 2nd}
+\section[March 2nd]{March 2\textsuperscript{nd}}
 \label{app:mar02}
 \includeslides{appendix/classes/March2.pdf}
 
-\section{March 9th}
+\newpage
+\section[March 9th]{March 9\textsuperscript{th}}
 \label{app:mar09}
 \includeslides{appendix/classes/March9.pdf}
 
-\section{March 16th}
+\newpage
+\section[March 16th]{March 16\textsuperscript{th}}
 \label{app:mar16}
 \includeslides{appendix/classes/March16.pdf}
+
+\newpage
+\section[March 23rd]{March 23\textsuperscript{rd}}
+\label{app:mar23}
+\includeslides{appendix/classes/March23.pdf}
+
+\newpage
+\section[March 30th]{March 30\textsuperscript{th}}
+\label{app:mar30}
+\includeslides{appendix/classes/March30.pdf}
+
+\newpage
+\section[April 6th]{April 6\textsuperscript{th}}
+\label{app:apr06}
+\includeslides{appendix/classes/April6.pdf}
+
+\newpage
+\section[April 13th]{April 13\textsuperscript{th}}
+\label{app:apr13}
+\includeslides{appendix/classes/April13.pdf}
+
+\newpage
+\section[April 27th]{April 27\textsuperscript{th}}
+\label{app:apr27}
+\includeslides{appendix/classes/April27.pdf}
+
+\newpage
+\section[May 4th]{May 4\textsuperscript{th}}
+\label{app:may04}
+\includeslides{appendix/classes/May4.pdf}
+
+\newpage
+\section[May 11th]{May 11\textsuperscript{th}}
+\label{app:may11}
+\includeslides{appendix/classes/May11.pdf}
+
+\newpage
+\section[May 25th]{May 25\textsuperscript{th}}
+\label{app:may25}
+\includeslides{appendix/classes/May25.pdf}
+
+\newpage
+\section[June 1st]{June 1\textsuperscript{st}}
+\label{app:jun01}
+\includeslides{appendix/classes/June1.pdf}
+
+\newpage
+\section[June 8th]{June 8\textsuperscript{th}}
+\label{app:jun08}
+\includeslides{appendix/classes/June8.pdf}
+
+\newpage
+\section[June 15th]{June 15\textsuperscript{th}}
+\label{app:jun15}
+\includeslides{appendix/classes/June15.pdf}
+
+\newpage
+\section[June 22nd]{June 22\textsuperscript{nd}}
+\label{app:jun22}
+\includeslides{appendix/classes/June22.pdf}
+
+\newpage
+\section[June 29th]{June 29\textsuperscript{th}}
+\label{app:jun29}
+\includeslides{appendix/classes/June29.pdf}
+
+\chapter{Peltonen's Fluency Revisited}
+\label{app:peltonen}
+\includeslides{appendix/Peltonen-2024.pdf}
+
+\chapter{Tomitch's Academic Writing}
+\label{app:tomitch}
+\includetomitch{appendix/Tomitch-2012.pdf}
+
+\chapter{Short paragraph of summary}
+\label{app:summary}
+
+\textbf{Short Paragraph of Summary (Peltonen, 2024)}
+
+
+``The text talks about second language fluency (L2) and how it is characterized beyond a broad definition in terms of “smoothness and effortlessness of speech”. The author invites the reader to revisit the concept of fluency with three points that have been observed in the most recent research on the topic. The first point to be considered is about observing the points of oral fluency (speed, breakdown, and repair) in the context of interaction between two people, not only in monologue. The second point is about seeing fluency and disfluency as a continuum. The distinction is not as clear cut as one might think, considering that the repetition and filler pauses can be used to buy time in the conversation increasing fluency and natural communication instead of characterizing a “disfluency”. Lastly, there is the topic of analyzing the fluency in L2 in regards to L1. An L2 learner shouldn't be necessarily compared to a native speaker of that language, but rather to another fluent speaker with the same L1 as the learner. In that aspect learners can better understand how the language they have in L2 compares with their L1, comparing their structures and getting more familiar with the language they are learning and with their own native language. In conclusion the author proposes revisiting the concept of fluency based on those three main topics previously discussed, in order to have a better understanding of L2 fluency and how to help learners reach it''.
+
+
+\chapter{Study Strategies Mind Map}
+\label{app:midmap}
+\includegraphics[trim={20cm 0 20cm 5cm},clip,scale=0.2]{appendix/Study Strategies-1.png}
+
+\chapter{Paragraph writing}
+\label{app:paragraph}
+
+``For many Christians, Easter is the most important time of the year. In Christianity, Easter represents the resurrection of Jesus Christ, the event that signifies triumph over death and represents the salvation provided by Christ's sacrifice on Good Friday. Easter also represents an important holiday where people travel and unite with friends and family over lunch or dinner, kids search for Easter eggs, and much chocolate is eaten. Since Christians have a strong religious faith in salvation and also have a great time with family and friends, Easter ends up being the most important time of the year for them''.
+
+\chapter{Shared Abstract's}
+\label{app:sharedabs}
+\includeslides{appendix/Abstracts.pdf}
+
+
+\chapter{Abstract Analysis}
+\label{app:abstract}
+\includeabs{appendix/AbstractAnalysis.pdf}
